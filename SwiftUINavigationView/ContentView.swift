@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var currPerson: Person = Person.sampleData[0];
     @Binding var persons: [Person];
+    @State private var selection: Person? = nil;
     
     var body: some View {
         NavigationSplitView {
-            List(persons) { person in
-                Text(person.name).onTapGesture {
-                    currPerson = person
-                }
+            List(persons, id: \.self, selection: $selection) { person in
+                NavigationLink(person.name, value: person.name)
             }
         } detail: {
-            PersonView(person: currPerson)
+            if let person = selection {
+                PersonView(person: person)
+            } else {
+                Text("Pick a person")
+            }
         }
     }
 }
