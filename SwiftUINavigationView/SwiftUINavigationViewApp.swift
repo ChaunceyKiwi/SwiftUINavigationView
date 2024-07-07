@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct SwiftUINavigationViewApp: App {
+    @State private var persons = Person.sampleData
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(persons: $persons)
         }
     }
 }

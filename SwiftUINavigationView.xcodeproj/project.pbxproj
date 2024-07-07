@@ -11,6 +11,8 @@
 		F8D0C2812C3AFBFB00A3AEAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D0C2802C3AFBFB00A3AEAC /* ContentView.swift */; };
 		F8D0C2832C3AFBFC00A3AEAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D0C2822C3AFBFC00A3AEAC /* Assets.xcassets */; };
 		F8D0C2862C3AFBFC00A3AEAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D0C2852C3AFBFC00A3AEAC /* Preview Assets.xcassets */; };
+		F8D0C28E2C3AFE7E00A3AEAC /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D0C28D2C3AFE7E00A3AEAC /* PersonView.swift */; };
+		F8D0C2902C3AFE8600A3AEAC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D0C28F2C3AFE8600A3AEAC /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		F8D0C2822C3AFBFC00A3AEAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8D0C2852C3AFBFC00A3AEAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8D0C2872C3AFBFC00A3AEAC /* SwiftUINavigationView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUINavigationView.entitlements; sourceTree = "<group>"; };
+		F8D0C28D2C3AFE7E00A3AEAC /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		F8D0C28F2C3AFE8600A3AEAC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				F8D0C2822C3AFBFC00A3AEAC /* Assets.xcassets */,
 				F8D0C2872C3AFBFC00A3AEAC /* SwiftUINavigationView.entitlements */,
 				F8D0C2842C3AFBFC00A3AEAC /* Preview Content */,
+				F8D0C28D2C3AFE7E00A3AEAC /* PersonView.swift */,
+				F8D0C28F2C3AFE8600A3AEAC /* Person.swift */,
 			);
 			path = SwiftUINavigationView;
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D0C28E2C3AFE7E00A3AEAC /* PersonView.swift in Sources */,
 				F8D0C2812C3AFBFB00A3AEAC /* ContentView.swift in Sources */,
+				F8D0C2902C3AFE8600A3AEAC /* Person.swift in Sources */,
 				F8D0C27F2C3AFBFB00A3AEAC /* SwiftUINavigationViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

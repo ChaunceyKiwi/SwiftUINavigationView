@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var currPerson: Person = Person.sampleData[0];
+    @Binding var persons: [Person];
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationSplitView {
+            List(persons) { person in
+                Text(person.name).onTapGesture {
+                    currPerson = person
+                }
+            }
+        } detail: {
+            PersonView(person: currPerson)
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(persons: .constant(Person.sampleData))
 }
